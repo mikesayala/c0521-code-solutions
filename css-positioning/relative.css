@@ -11,26 +11,21 @@
 }
 
 #bulbasaur {
-  position: relative;
   top: 30px;
 }
 
 #charmander {
-  position: relative;
   top: 40px;
 }
 
 #squirtle {
-  position: relative;
   top: 70px;
 }
 
 #pikachu {
-  position: relative;
   top: 175px;
 }
 
 #jigglypuff {
-  position: absolute;
   top: 350px;
 }
