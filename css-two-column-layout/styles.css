@@ -1,0 +1,33 @@
+.container {
+  margin: auto;
+  width: 50%;
+}
+
+.column-full {
+  text-align: center;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+
+  /* flex-wrap: wrap; */
+}
+
+.column-fourths {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  justify-content: left;
+}
+
+.row-twos {
+  justify-content: left;
+}
+
+/* .column-twos {
+  display: flex;
+} */
