@@ -8,8 +8,11 @@
   font-family: 'karla', sans-serif;
 }
 
-.row-one {
+.row {
   display: flex;
+}
+
+.row-wrap {
   flex-wrap: wrap;
   width: 75%;
   margin: auto;
@@ -23,10 +26,6 @@ img {
 
 .column-fourths {
   flex-basis: calc(100% / 2);
-}
-
-.row-two {
-  display: flex;
 }
 
 .submit {
