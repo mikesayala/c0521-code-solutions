@@ -35,6 +35,7 @@ input {
   font-family: 'avenir', sans-serif;
   font-size: 11px;
   color: #7e7e7e;
+  margin-bottom: 3rem;
 }
 
 .column-four {
@@ -82,6 +83,7 @@ div.column-two {
 
 .row-two {
   max-height: 50rem;
+  margin-bottom: 3rem;
 }
 
 .first-text {
@@ -110,4 +112,120 @@ div.column-two {
 
 span {
   padding-right: 10rem;
+}
+
+.blue-canvas {
+  width: 40%;
+  justify-content: left;
+}
+
+.column-one-half {
+  flex-basis: calc(100% / 10);
+  column-width: 10%;
+  flex-shrink: 1;
+}
+
+button {
+  background-color: #294464;
+  color: #bbc4ce;
+  border-radius: 3px;
+  border: none;
+  float: right;
+  padding: 6px 6px;
+  margin-right: 1rem;
+}
+
+.row-one {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.column-one-fifth {
+  justify-content: left;
+}
+
+.blog {
+  font-size: 5px;
+}
+
+.anchor {
+  font-size: 10px;
+  color: lightgray;
+}
+
+.column-full {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.column-full > p {
+  font-size: 12px;
+  font-family: 'avenir', sans-serif;
+  color: #8e8e8e;
+}
+
+.column-full > h3 {
+  color: #6e6e6e;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.column-three {
+  width: 50%;
+  padding: 3rem;
+  font-family: 'avenir', sans-serif;
+  color: #7e7e7e;
+  font-size: 13px;
+}
+
+.row-three {
+  background-color: #fafafa;
+}
+
+.row-five {
+  background-color: #525351;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  width: 20%;
+  margin-right: 16rem;
+}
+
+.p {
+  color: white;
+  font-family: 'avenir', sans-serif;
+  text-align: left;
+  padding-left: 4rem;
+  font-size: 11px;
+  padding-top: 1rem;
+}
+
+.company-product {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.column-company {
+  color: white;
+}
+
+.company {
+  justify-content: flex-end;
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-weight: 100;
+  font-family: 'avenir', sans-serif;
+}
+
+.column-five {
+  flex-basis: calc(600% / 3);
 }
