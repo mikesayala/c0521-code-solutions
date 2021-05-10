@@ -115,8 +115,8 @@ span {
 }
 
 .blue-canvas {
-  width: 40%;
-  justify-content: left;
+  width: 25%;
+  margin-right: 25rem;
 }
 
 .column-one-half {
@@ -185,6 +185,11 @@ button {
 
 .row-three {
   background-color: #fafafa;
+}
+
+.row-three-cities {
+  background-color: #fafafa;
+  border-bottom: 1px solid #f1f2f3;
 }
 
 .row-five {
