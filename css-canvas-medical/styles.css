@@ -21,7 +21,7 @@ input {
   background-color: #294464;
   color: #bbc4ce;
   border-radius: 3px;
-  padding: 8px 35px;
+  padding: 10px 30px;
   border: none;
 }
 
@@ -132,8 +132,7 @@ button {
   border-radius: 3px;
   border: none;
   float: right;
-  padding: 6px 20px;
-  margin-right: 1rem;
+  padding: 0 25px;
 }
 
 .row-one {
