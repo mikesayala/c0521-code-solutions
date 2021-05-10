@@ -131,15 +131,17 @@ button {
   border-radius: 3px;
   border: none;
   float: right;
-  padding: 6px 6px;
+  padding: 6px 20px;
   margin-right: 1rem;
 }
 
 .row-one {
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #ebecef;
+  padding-bottom: 1rem;
 }
 
 .column-one-fifth {
