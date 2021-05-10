@@ -103,6 +103,7 @@ div.column-two {
   line-height: 1.5rem;
   color: white;
   font-family: 'avenir', sans-serif;
+  padding-bottom: 1rem;
 }
 
 .third-text {
@@ -203,6 +204,7 @@ button {
 .logo {
   width: 20%;
   margin-right: 16rem;
+  padding-top: 1rem;
 }
 
 .p {
