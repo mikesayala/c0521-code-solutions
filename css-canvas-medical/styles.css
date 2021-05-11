@@ -14,7 +14,6 @@
 .row-four {
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 input {
@@ -57,7 +56,6 @@ a {
 .row-six {
   background-color: #fafafa;
   padding: 2rem;
-  position: relative;
 }
 
 div.column-two {
@@ -82,7 +80,6 @@ div.column-two {
 }
 
 .row-two {
-  max-height: 50rem;
   margin-bottom: 3rem;
 }
 
@@ -103,7 +100,7 @@ div.column-two {
   line-height: 1.5rem;
   color: white;
   font-family: 'avenir', sans-serif;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .third-text {
@@ -123,7 +120,6 @@ span {
 .column-one-half {
   flex-basis: calc(100% / 10);
   column-width: 10%;
-  flex-shrink: 1;
 }
 
 button {
@@ -132,7 +128,8 @@ button {
   border-radius: 3px;
   border: none;
   float: right;
-  padding: 0 25px;
+  padding: 3px 20px;
+  font-size: 11px;
 }
 
 .row-one {
@@ -154,7 +151,7 @@ button {
 
 .anchor {
   font-size: 10px;
-  color: lightgray;
+  color: #afafaf;
 }
 
 .column-full {
@@ -236,4 +233,9 @@ button {
 
 .column-five {
   flex-basis: calc(600% / 3);
+}
+
+.column-two {
+  width: 90%;
+  margin: auto;
 }
