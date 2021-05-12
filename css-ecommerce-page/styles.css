@@ -29,7 +29,7 @@
 
 .bold {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 5px;
 }
 
@@ -50,12 +50,19 @@ del {
   margin-left: 5px;
   color: #d8d8d8;
   font-family: 'DM Sans', sans-serif;
+  font-weight: light;
 }
 
 h3 {
   margin-left: 1rem;
+  font-weight: 700;
 }
 
 p {
   margin-left: 1rem;
+  font-weight: 500;
+}
+
+span {
+  font-weight: 1000;
 }
