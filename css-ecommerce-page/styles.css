@@ -1,0 +1,61 @@
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.row-one {
+  display: flex;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.row-two {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5);
+}
+
+.image {
+  object-fit: cover;
+  margin: 1rem;
+  background-size: contain;
+  width: 225px;
+  height: 350px;
+}
+
+.bold {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.gray {
+  font-family: 'DM Sans', sans-serif;
+  border-left: #d7d7d7 1px solid;
+  padding-left: 5px;
+  color: #d7d7d7;
+  font-size: 13px;
+}
+
+.price {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #fff2e7;
+}
+
+del {
+  margin-left: 5px;
+  color: #d8d8d8;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h3 {
+  margin-left: 1rem;
+}
+
+p {
+  margin-left: 1rem;
+}
