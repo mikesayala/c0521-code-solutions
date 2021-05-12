@@ -9,7 +9,9 @@
  */
 function isUnderFive(number) {
   if (number < 5) {
-    return number;
+    return true;
+  } else {
+    return false;
   }
 }
 
