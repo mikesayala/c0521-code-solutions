@@ -5,14 +5,15 @@
 // use modulus to determine when the button will be on or off.
 // create an addEventListener to listen for the clicks.
 
-var clicks = 0;
+var isOn = false;
 function buttonOff(event) {
-  clicks++;
   var toggle;
-  if (clicks % 2 === 0) {
-    toggle = 'on';
-  } else {
+  if (isOn === true) {
+    isOn = false;
     toggle = 'off';
+  } else {
+    isOn = true;
+    toggle = 'on';
   }
   $buttonActive.className = 'button ' + toggle;
   $bodyActive.className = 'light-mode ' + toggle;
