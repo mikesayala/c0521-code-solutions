@@ -1,7 +1,68 @@
-button {
+body {
+  margin: 0;
+}
+
+.container.off {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.container.on {
+  background-color: #rgba(50, 50, 50);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.open {
   background-color: #4a4ae9;
   color: white;
-  padding: 1rem 3rem;
+  padding: 0.3rem 2rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 2rem;
+  border: none;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.pop-up.on {
+  display: flex;
+  flex-wrap: column;
+  justify-content: center;
+  border-radius: 5px;
+  position: fixed;
+  background-color: white;
+}
+
+.pop-up.off {
+  display: none;
+}
+
+.x {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 6rem;
+  width: 80%;
+}
+
+.column-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.survey {
+  text-align: center;
+  padding: 0.5rem 2rem;
+  background-color: #eb5d5d;
+  border-radius: 5px;
+  border: 1px;
+  margin: auto;
+  font-size: 24px;
+  box-shadow: 0 5px 15px -2px #000;
+  color: white;
+}
+
+.row-2 {
+  margin: 20rem;
 }
