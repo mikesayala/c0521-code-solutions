@@ -1,0 +1,33 @@
+
+.container {
+  padding: 20rem 0;
+}
+
+body.light-mode.on {
+  background-color: #fef9f1;
+}
+
+body.light-mode.off {
+  background-color: #111;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+button.on {
+  padding: 9rem;
+  border-radius: 50%;
+  background-color: #faea84;
+  border: none;
+  box-shadow: 3px 12px 15px 4px rgba(253, 242, 189, 0.56);
+}
+
+button.off {
+  background-color: #252525;
+  box-shadow: 0 -6px 0 4px rgba(13, 13, 13, 0.67);
+  padding: 9rem;
+  border-radius: 50%;
+  border: none;
+}
