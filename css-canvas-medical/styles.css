@@ -135,15 +135,11 @@ button {
 
 .row-one {
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #ebecef;
   padding-bottom: 1rem;
-}
-
-.column-one-fifth {
-  justify-content: left;
 }
 
 .blog {
@@ -239,4 +235,12 @@ button {
 .column-two {
   width: 90%;
   margin: auto;
+}
+
+.container-one-fifth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
 }
