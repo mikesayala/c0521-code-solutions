@@ -5,21 +5,6 @@
 // pop up to show up
 // when i click NO it should close the pop up.
 
-// var popUp = false;
-// function SurveySurprise(event) {
-//   var $survey;
-//   if (popUp === true) {
-//     popUp = false;
-//     $survey = 'on';
-//   } else {
-//     popUp = true;
-//     $survey = 'off';
-//   }
-//   $container.className = 'container ' + $survey;
-// }
-
-// $popUp.addEventListener('click', SurveySurprise);
-
 var openMo = false;
 function blueButton(event) {
   var $blueButton;
@@ -31,13 +16,30 @@ function blueButton(event) {
     $blueButton = 'on';
   }
   $popUp.className = 'pop-up ' + $blueButton;
-  $container.className = 'container ' + $blueButton;
   $openModal.className = 'open ' + $blueButton;
+  $gradient.className = 'gradient ' + $blueButton;
 }
 
+var moCon = false;
+function noButton(event) {
+  var redButton;
+  if (moCon === true) {
+    moCon = false;
+    redButton = 'on';
+  } else {
+    moCon = true;
+    redButton = 'off';
+  }
+  $modalContainer.className = 'modal ' + redButton;
+  $display.className = 'pop-up ' + redButton;
+  $gradient.className = 'gradient ' + redButton;
+}
+
+var $display = document.querySelector('.pop-up');
+var $gradient = document.querySelector('.gradient');
+var $modalContainer = document.querySelector('.modal');
+var $survey = document.querySelector('.survey');
 var $popUp = document.querySelector('.pop-up');
-var $container = document.querySelector('.container');
 var $openModal = document.querySelector('.open');
 $openModal.addEventListener('click', blueButton);
-
-// var $survey = document.querySelector('.survey');
+$survey.addEventListener('click', noButton);
