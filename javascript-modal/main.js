@@ -15,7 +15,6 @@ $survey.addEventListener('click', noButton);
 
 function blueButton(event) {
   var $blueButton;
-  $blueButton = 'off';
   $blueButton = 'on';
 
   $popUp.className = 'pop-up ' + $blueButton;
@@ -25,7 +24,6 @@ function blueButton(event) {
 
 function noButton(event) {
   var redButton;
-  redButton = 'on';
   redButton = 'off';
 
   $modalContainer.className = 'modal ' + redButton;
