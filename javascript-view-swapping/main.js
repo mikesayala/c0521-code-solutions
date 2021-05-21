@@ -16,9 +16,9 @@ function matchTab(event) {
       $tabAll[i].className = 'tab';
     }
   }
-  var $dataViewValue = event.target.getAttribute('data-view');
+  var dataViewValue = event.target.getAttribute('data-view');
   for (i = 0; i < $viewAll.length; i++) {
-    if ($viewAll[i].getAttribute('data-view') !== $dataViewValue) {
+    if ($viewAll[i].getAttribute('data-view') !== dataViewValue) {
       $viewAll[i].className = 'view ' + 'hidden';
     } else {
       $viewAll[i].className = 'view';
