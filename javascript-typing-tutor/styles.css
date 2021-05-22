@@ -8,13 +8,22 @@
 
 h1 {
   font-size: 50px;
-  font-family: 'Jua', sans-serif;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+.green {
+  color: #23cd1c;
+}
+
+.red {
+  color: #f95856;
+  border-bottom: 3px red solid;
+}
+
+.underline {
+  border-bottom: 3px solid black;
 }
 
 .space {
-  margin: 5px;
-}
-
-.span.green {
-  color: green;
+  width: 50px;
 }

@@ -1,11 +1,16 @@
 // Create a function for the addEventListener
-// inside the function
-var $span = document.querySelectorAll('.span');
-for (var span of $span) { span.addEventListener('keydown', keyDown); }
-var words = (Array.from('grumpywizardsmaketoxicbrew '));
-var i;
+// inside the function event.key needs to match the letter on the screen
+//
+var $letterList = document.querySelectorAll('span');
+window.addEventListener('keydown', keyDown);
+var spanPhrase = 'grumpy wizards make toxic brew';
+var letterIndex = 0;
 function keyDown(event) {
-  if (words[i] === event.target.key) {
-    span.className = 'span ' + 'green';
+  if (event.key === spanPhrase[letterIndex]) {
+    $letterList[letterIndex].className = 'green';
+    $letterList[letterIndex + 1].className = 'underline';
+    letterIndex++;
+  } else {
+    $letterList[letterIndex].className = 'red';
   }
 }
