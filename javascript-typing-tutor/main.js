@@ -5,12 +5,17 @@ var $letterList = document.querySelectorAll('span');
 window.addEventListener('keydown', keyDown);
 var spanPhrase = 'grumpy wizards make toxic brew';
 var letterIndex = 0;
+
 function keyDown(event) {
-  if (event.key === spanPhrase[letterIndex]) {
-    $letterList[letterIndex].className = 'green';
-    $letterList[letterIndex + 1].className = 'underline';
-    letterIndex++;
-  } else {
-    $letterList[letterIndex].className = 'red';
+  if (letterIndex < spanPhrase.length) {
+    if (event.key === spanPhrase[letterIndex]) {
+      $letterList[letterIndex].className = 'green';
+      letterIndex++;
+      if (letterIndex <= spanPhrase.length - 1) {
+        $letterList[letterIndex].className = 'underline';
+      }
+    } else {
+      $letterList[letterIndex].className = 'red';
+    }
   }
 }
