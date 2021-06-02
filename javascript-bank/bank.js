@@ -10,12 +10,12 @@ Bank.prototype.openAccount = function (holder, balance) {
       return null;
     } else {
       var accountNumber = new Account(this.nextAccountNumber, holder);
-      accountNumber += Bank.accounts[i].deposit(balance);
+      accountNumber += Bank.accounts[i].balance;
       this.accounts.push(accountNumber);
       this.nextAccountNumber++;
     }
   }
-  return accountNumber;
+  return this.nextAccountNumber;
 };
 
 Bank.prototype.getAccount = function (number) {
