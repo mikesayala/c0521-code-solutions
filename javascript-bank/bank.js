@@ -6,11 +6,11 @@ function Bank() {
 
 Bank.prototype.openAccount = function (holder, balance) {
   for (var i = 0; i < this.accounts.length; i++) {
-    if (balance < 0 || !Number.isInteger(Account.balance)) {
+    if (balance < 0 || !Number.isInteger(balance)) {
       return null;
     } else {
       var accountNumber = new Account(this.nextAccountNumber, holder);
-      accountNumber += Bank.accounts[i].deposit(Account.balance);
+      accountNumber += Bank.accounts[i].deposit(balance);
       this.accounts.push(accountNumber);
       this.nextAccountNumber++;
     }
