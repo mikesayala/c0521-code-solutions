@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column-third {
+  width: calc(100% / 3);
+  height: 100vh;
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
