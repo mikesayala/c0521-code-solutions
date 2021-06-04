@@ -7,17 +7,48 @@
 // the arrows need to do the same
 // if i click left it should show jigglypuff and hide everyone else and change the dot to fas instead of far
 // need to
+var $dot = document.querySelectorAll('.margin-circle');
+var $arrowRt = document.querySelector('.arrow-right');
+var $arrowLt = document.querySelector('.arrow-left');
+var $imgAll = document.querySelectorAll('img');
+$arrowRt.addEventListener('click', nextImage);
+$arrowLt.addEventListener('click', previousImage);
+window.addEventListener('click', dotClick);
+var counter = 0;
 
-var $arrow = document.querySelectorAll('.arrow');
-var $img = document.querySelector('img');
-window.addEventListener('click', arrowSwitch);
-
-function arrowSwitch(event) {
-  for (var i = 0; i < $arrow.length; i++) {
-    if ($arrow[i] === event.target) {
-      $img.classList.toggle('hidden');
-    } else {
-      $img.classList.toggle('view');
-    }
-  }
+function activate(images, button) {
+  images[counter].className = 'view';
+  button[counter].className = 'fas fa-circle margin-circle';
 }
+
+function deactivate(images, button) {
+  images[counter].className = 'hidden';
+  button[counter].className = 'far fa-circle margin-circle';
+}
+
+function dotClick(event) {
+  deactivate($imgAll, $dot);
+  var dataIndex = event.target.getAttribute('data-index');
+  if (dataIndex !== null) {
+    counter = dataIndex - 1;
+  }
+  activate($imgAll, $dot);
+}
+
+function nextImage() {
+  deactivate($imgAll, $dot);
+  counter = (counter + 1) % $imgAll.length;
+  activate($imgAll, $dot);
+}
+
+function previousImage() {
+  deactivate($imgAll, $dot);
+  if (counter === 0) {
+    counter = $imgAll.length - 1;
+  } else {
+    counter = counter - 1;
+  }
+  activate($imgAll, $dot);
+}
+
+setInterval(nextImage, 3000);

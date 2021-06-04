@@ -34,7 +34,8 @@
   display: flex;
 }
 
-.arrow {
+.arrow-right,
+.arrow-left {
   font-size: 48px;
 }
 
