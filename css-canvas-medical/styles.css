@@ -111,13 +111,10 @@ div.column-two {
   margin-left: 2rem;
 }
 
-span {
-  padding-right: 10rem;
-}
-
 .blue-canvas {
-  width: 25%;
-  margin-right: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
 }
 
 .column-one-tenth {
